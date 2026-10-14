@@ -1,0 +1,184 @@
+/* Franco Huidobro portfolio — low-fidelity wireframe stylesheet */
+:root {
+  --navy: #102142;
+  --blue: #2860ff;
+  --pale: #f2f6ff;
+  --line: #d9e3f7;
+  --text: #17294c;
+  --muted: #7586a6;
+  --white: #fff;
+  --content: 1120px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--navy);
+}
+
+p{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { margin: 0; color: var(--text); background: var(--pale); font-family: "IBM Plex Sans", sans-serif; font-weight: 300; font-size: 16px; line-height: 1.65; }
+a { color: inherit; text-decoration: none; }
+.site-header { min-height: 64px; padding: 0 max(5vw, calc((100vw - var(--content))/2)); display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--navy); color: white; position: sticky; top: 0; z-index: 10; }
+.brand { font-weight: 800; font-size: 22px; letter-spacing: -.04em; white-space: nowrap; }
+.brand span { color: var(--blue); }
+.main-nav { display: flex; align-items: center; gap: clamp(12px, 2.2vw, 28px); font-size: 11px; }
+.main-nav a { opacity: .8; transition: opacity .2s ease; }
+.main-nav a:hover, .main-nav a.active { opacity: 1; color: #9bb6ff; }
+.menu-toggle { display: none; border: 0; background: transparent; color: white; font-size: 24px; cursor: pointer; }
+.section-wrap { width: min(var(--content), 90%); margin-inline: auto; }
+.hero { min-height: 490px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 8%; padding-block: 76px; }
+.hero-copy { max-width: 480px; }
+.eyebrow, .date, .project-type, .section-kicker { color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+.eyebrow { margin: 0 0 12px; }
+.date{
+  color: var(--blue);
+  font-size: 14px;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+h1 { font-size: clamp(38px, 4.5vw, 62px); line-height: 1.02;  margin-bottom: 18px; }
+h2 { font-size: 32px; line-height: 1.25;  }
+h3 { font-size: 20px; line-height: 1.35; margin-bottom: 8px; }
+.hero-copy h2 { font-size: 24px; margin: 16px 0 12px; }
+
+.hero-copy p:not(.eyebrow) { color: #51658C; max-width: 460px; }
+.accent-line { width: 40px; height: 3px; background: var(--blue); }
+.hero-visual { display: flex; justify-content: center; }
+.portrait-placeholder { width: min(360px, 30vw); aspect-ratio: 1; border-radius: 50%; background: var(--blue); display: grid; place-items: center; color: white; text-align: center; padding: 30px; }
+.button-row { display: flex; gap: 12px; margin-top: 22px; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-width: 120px; padding: 10px 18px; border: 1px solid var(--line); font-size: 12px; font-weight: 700; transition: transform .2s, background .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: var(--blue); border-color: var(--blue); color: white; }
+.button-ghost { background: transparent; }
+.ticker { overflow: hidden; background: var(--blue); color: white; padding: 18px 0; white-space: nowrap; font-size: clamp(18px, 2.2vw, 29px); font-weight: 500; }
+.ticker-track { width: max-content; animation: ticker 36s linear infinite; }
+@keyframes ticker { to { transform: translateX(-25%); } }
+.section-block { padding-block: 74px; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); margin-bottom: 30px; }
+.section-heading h2 { margin-bottom: 14px; font-size: 32px; }
+.section-kicker { margin: 0 0 14px; }
+.about-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 9%; align-items: center; }
+.body-copy { max-width: 580px; color: #51658C; font-size: 13px; }
+.image-placeholder { display: grid; place-items: center; text-align: center; background: #e2e9f6; border: 1px solid #d2ddef; color: #8191ae; font-size: 12px; min-height: 130px; padding: 16px; position: relative; overflow: hidden; }
+.image-placeholder::before { content: ""; position: absolute; inset: 0; opacity: .45; background: repeating-linear-gradient(135deg, transparent 0 18px, #d0daeb 18px 19px); }
+.image-placeholder span { position: relative; z-index: 1; }
+.landscape { aspect-ratio: 4 / 3; min-height: 0; }
+.image-row { display: grid; gap: 16px; margin-top: 28px; }
+.image-row.three { grid-template-columns: repeat(3, 1fr); }
+.image-row .image-placeholder { aspect-ratio: 1.35; }
+.education-item { padding: 20px 0; border-bottom: 1px solid var(--line); max-width: 960px; }
+.education-item h3 { margin-bottom: 5px; }
+.education-item p { color: #51658C; font-size: 13px; margin-bottom: 8px; }
+.education-item .date { margin-bottom: 4px; }
+.institution { color: var(--blue) !important; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.tag-list span { padding: 5px 10px; background: #e4ecff; color: #3659a4; font-size: 11px; }
+.text-link { color: var(--blue); font-size: 12px; font-weight: 700; }
+.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; }
+.project-card { min-width: 0; }
+.project-card h2 { font-size: 17px; margin-bottom: 10px; }
+.project-card h3 { font-size: 16px; }
+.project-card p { color: #51658C; }
+.project-type { color: var(--blue) !important; margin-bottom: 7px; }
+.project-image { aspect-ratio: 1.35; min-height: 0; margin-top: 16px; }
+.center { text-align: center; margin-top: 30px; }
+.section-white { background: white; }
+.honors-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 24px; }
+.honor-list { display: grid; gap: 10px; }
+.honor-card { border: 1px solid var(--line); padding: 16px; }
+.honor-card .date { margin-bottom: 4px; }
+.honor-card h3 { margin-bottom: 5px; }
+.honor-card p:last-child { color: #51658C; font-size: 16px; margin-bottom: 0; }
+.award-image { min-height: 100%; }
+.skills-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; background: white; padding: 24px; }
+.skills-panel h3 { font-size: 14px; margin: 0 0 8px; }
+.skills-panel ul { color: #51658C; font-size: 12px; padding-left: 18px; margin: 0 0 20px; }
+.skills-image { min-height: 280px; }
+.leadership-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.mini-card { padding: 24px; border: 1px solid var(--line); }
+.mini-icon { display: block; color: var(--blue); font-size: 22px; margin-bottom: 12px; }
+.mini-card p:last-child { color: #51658C; font-size: 12px; margin-bottom: 0; }
+.mini-card .date { margin-bottom: 8px; }
+.site-footer { border-top: 1px solid var(--line); padding-top: 34px; padding-bottom: 20px; display: grid; grid-template-columns: 1fr auto; gap: 20px; }
+.site-footer h2 { font-size: 23px; margin-bottom: 5px; }
+.site-footer p { color: #51658C; font-size: 12px; }
+.contact-links { display: flex; flex-direction: column; text-align: right; font-size: 12px; color: #51658C; }
+.copyright { grid-column: 1 / -1; border-top: 1px solid var(--line); text-align: center; padding-top: 14px; margin: 0; }
+.projects-page { padding-top: 64px; padding-bottom: 80px; }
+.projects-page .section-heading { align-items: end; margin-bottom: 36px; }
+.projects-page h1 { font-size: 42px; margin-bottom: 16px; }
+.full-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 24px; }
+.full-projects .project-card h2 { min-height: 42px; }
+.full-projects .project-card p { font-size: 13px; }
+.full-projects .project-image { aspect-ratio: 1.6; }
+@media (max-width: 760px) {
+  .site-header { min-height: 60px; }
+  .menu-toggle { display: block; }
+  .main-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: var(--navy); padding: 18px 5%; flex-direction: column; align-items: flex-start; gap: 16px; }
+  .main-nav.is-open { display: flex; }
+  .hero { grid-template-columns: 1fr; padding-block: 56px; gap: 36px; }
+  .hero-copy { max-width: none; }
+  .hero-visual { grid-row: 1; }
+  .portrait-placeholder { width: min(250px, 65vw); }
+  .section-block { padding-block: 52px; }
+  .about-grid, .honors-grid, .skills-panel { grid-template-columns: 1fr; }
+  .image-row.three { grid-template-columns: repeat(2, 1fr); }
+  .image-row.three .image-placeholder:last-child { display: none; }
+  .project-grid, .full-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
+  .leadership-grid { grid-template-columns: 1fr; }
+  .site-footer { grid-template-columns: 1fr; }
+  .contact-links { text-align: left; }
+  .projects-page { padding-top: 42px; }
+  .projects-page .section-heading { display: block; }
+}
+@media (max-width: 480px) {
+  body { font-size: 13px; }
+  .section-wrap { width: 88%; }
+  h1 { font-size: 42px; }
+  .section-heading { display: block; }
+  .section-heading h2 { font-size: 22px; }
+  .section-kicker { margin-top: -4px; }
+  .image-row.three, .project-grid, .full-projects { grid-template-columns: 1fr; }
+  .image-row.three .image-placeholder:last-child { display: grid; }
+  .full-projects .project-card h2 { min-height: 0; }
+  .skills-panel { padding: 18px; }
+  .skills-image { min-height: 190px; }
+  .button { min-width: 110px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ticker-track { animation: none; }
+  *, *::before, *::after { transition: none !important; }
+}
+/* ---------- Estado inicial de las animaciones de scroll (GSAP) ----------
+   La clase .has-gsap la pone un script en el <head> (solo si no hay "reducir movimiento")
+   y script.js la retira en cuanto GSAP toma el control. Mantén esta lista
+   sincronizada con los selectores de initScrollAnimations() en script.js. */
+.has-gsap :is(
+  .hero .eyebrow, .hero h1, .hero-copy h2, .hero-copy p:not(.eyebrow), .hero .button-row,
+  .hero .accent-line, .hero .portrait-placeholder,
+  .section-heading > *,
+  .body-copy p, .education-item, .skills-panel h3, .skills-panel ul, .center, .site-footer > *,
+  .project-card, .honor-card, .mini-card, .tag-list span,
+  .image-placeholder:not(.project-image)
+) { opacity: 0; }
