@@ -20,18 +20,81 @@
   <main class="section-wrap projects-page">
     <div class="section-heading"><div><p class="eyebrow">Selected work / 2020—2026</p><h1>Projects</h1></div><p class="section-kicker">Research · Development · Industrial automation</p></div>
     <div class="project-grid full-projects">
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>R&D and field project: Electric arc furnace retrofit</h2><p>Simulated a 12-pulse rectifier using a Thévenin-equivalent-based chaotic model to calculate optimal interphase reactor values and improve power transfer to the arc furnace.</p><p>Validated current control through laboratory testing with RL loads and current step response.</p><div class="image-placeholder project-image"><span>Industrial field photo</span></div></article>
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>R&D and field project: Static VAR compensator (SVC) integration</h2><p>Designed and programmed real-time power quality algorithms for an SVC system. Implemented synchronized measurements, flicker evaluation, voltage and current harmonic analysis, and short-circuit power estimation.</p><div class="image-placeholder project-image"><span>Prototype / lab photo</span></div></article>
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>Electromagnetic stirring (EMS) IGBT drive</h2><p>Designed an advanced IGBT inverter control architecture for a magnetohydrodynamic machine to optimize electromagnetic stirring of molten steel.</p><p>Reverse-engineered the existing installation and formulated a new stirring profile.</p><div class="image-placeholder project-image"><span>Prototype / lab photo</span></div></article>
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>DigiFlex® field excitation system upgrades</h2><p>Led control firmware architecture updates for synchronous machine excitation drives, supporting safe sequencing and regulation.</p><p><strong>Digital twin integration:</strong> Programmed a mathematical-model-based digital twin of the synchronous machine.</p><div class="image-placeholder project-image"><span>Industrial field photo</span></div></article>
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>Open-winding synchronous cycloconverter</h2><p>Designed a novel cycloconverter drive system for tandem and reversible rolling mills, with high-fidelity plant models and robust control.</p><div class="image-placeholder project-image"><span>Industrial field photo</span></div></article>
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>Model predictive control for electric arc furnaces</h2><p>Designed a high-speed rectifier control system to mitigate grid flickering and regulate DC current under chaotic load dynamics.</p><div class="image-placeholder project-image"><span>Prototype / lab photo</span></div></article>
-      <article class="project-card"><p class="project-type">AMI Automation</p><h2>Supersynchronous induction drive</h2><p>Developed firmware for a wound-rotor induction motor drive aimed at high-efficiency supersynchronous speed operation.</p><div class="image-placeholder project-image"><span>Industrial field photo</span></div></article>
-      <article class="project-card"><p class="project-type">Field project</p><h2>Quadra-torque drive system</h2><p>Supported end-to-end commissioning of a four-dual-synchronous motor ball mill drive, coordinating with plant infrastructure and operations teams.</p><div class="image-placeholder project-image"><span>Prototype / lab photo</span></div></article>
-      <article class="project-card"><p class="project-type">Research</p><h2>Power quality & energy storage</h2><p>Analyzed grid disturbances during wind power growth and engineered a supercapacitor-based solution to protect critical loads.</p><div class="image-placeholder project-image"><span>Research image</span></div></article>
-      <article class="project-card"><p class="project-type">Teaching</p><h2>Graduate teaching assistant & laboratory instructor</h2><p>Instructed laboratory sessions, supervised students in circuit analysis, hardware debugging, and safety protocols.</p><div class="image-placeholder project-image"><span>Laboratory image</span></div></article>
-      <article class="project-card"><p class="project-type">Research</p><h2>Research assistant</h2><p>Designed a closed-loop AC motor speed control system using a microcontroller, PLC, and language-integrated control logic.</p><div class="image-placeholder project-image"><span>Laboratory image</span></div></article>
-      <article class="project-card"><p class="project-type">Professional development</p><h2>Lean Six Sigma advisor</h2><p>Co-led manufacturing projects, using statistical analysis and continuous improvement methods to improve process quality.</p><div class="image-placeholder project-image"><span>Workshop image</span></div></article>
+      <article class="project-card"><p class="project-type">AMI Automation</p>
+        <h2>R&D and field project: Electric arc furnace retrofit (Nucor Steel Darlington)</h2>
+        <p>Simulated a 12-pulse rectifier utilizing a Chua’s equations-based chaotic model to calculate the optimal interphase reactor. It minimized voltage losses and increases power transfer to the arc for faster melting cycles.</p>
+        <p>Validated current control through laboratory testing with RL loads and current step response.</p>
+        <div class="image-placeholder project-image project-image-4"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D and field project: Static var compensator (SVC) integration (Rocky Mountain Steel)</h2>
+        <p>Designed and programmed real-time power quality algorithms for the AMI SmartDisplay HMI® to quantify SVC performance. Implemented measurements including flicker evaluation, voltage and current harmonic analysis, and real-time short-circuit power estimation.</p><div class="image-placeholder project-image project-image-5"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D and field project: Electromagnetic stirring (EMS) IGBT drive (Rocky Mountain Steel)</h2>
+        <p>Designed an advanced IGBT inverter control architecture for a magnetohydrodynamic machine to optimize the electromagnetic stirring of molten steel. </p>
+        <p>Reverse-engineered the existing installation to formulate a new stirring profile based on the applied Lorentz forces which translated into current references. Programmed the control logic, and validated the system performance.</p><div class="image-placeholder project-image project-image-6"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D and field project: DigiFex® field excitation system upgrades (CEMEX)</h2>
+        <p>Led the control firmware architecture updates for an across-the-line synchronous machine excitation drive, responsible for starting sequences and PF/VAR regulation. Engineered two major updates:</p>
+        <p><b>Digital twin integration:</b>Programmed a mathematical-model-based digital twin of the synchronous machine, enabling hardware-free simulations of control loops, logic, I/O, and protections to accelerate firmware validation and facilitate technical demonstrations.</p>
+        <p><b>Machine learning fault detection:</b> Programmed a Support Vector Machine (SVM) algorithm to detect thyristor misfiring. Trained offline via MATLAB/Simulink, the model analyzes rectified volt age to identify firing failures, preventing AC-side unbalances. </p>
+        <p>First on-site commissioning is scheduled at CEMEX, standardizing the feature for future units with planned expansion to cycloconverters.</p>
+        <div class="image-placeholder project-image project-image-7"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D Project: Open-Winding Synchronous Cycloconverter (Steel Industry)</h2>
+        <p><b>Scope:</b> Designed a novel cycloconverter drive system for retrofitting tandem and reversible rolling mills. </p>
+        <p><b>Theoretical Framework:</b> Engineered a high-precision control architecture based on robust physical modeling. Derived motor dynamics via differential equations to implement comprehensive vector control loops and advanced state estimation algorithms (including Kalman filtering) for optimal flux and torque regulation and zero-sequence current suppression. </p>
+        <p><b>Implementation & Deployment:</b> Constructed high-fidelity plant models in MATLAB/Simulink for stability validation. Translated control laws into LabVIEW/NI FPGA for standalone execution.</p>
+        <div class="image-placeholder project-image project-image-8"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D Project: Model Predictive Control (MPC) for Electric Arc Furnaces</h2>
+        <p><b>Scope:</b> Designed a high-speed rectifier control system to mitigate grid flickering and regulate DC current under chaotic load dynamics in steel process.</p>
+        <p><b>Theoretical Framework:</b> Engineered a model predictive control (MPC) algorithm to predict the current dynamic response and reject flickering. Implementation & Deployment:</p>
+        <p><b>Deployment:</b> Validated controller robustness against a chaotic load via Simulink simulations</p>
+        <div class="image-placeholder project-image project-image-9"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D Project: Supersynchronous Induction Drive</h2>
+        <p><b>Scope:</b> Developed the firmware for a wound-rotor induction motor drive aimed at high-efficiency supersynchronous speed operation. </p>
+        <p><b>Theoretical Framework:</b> Formulated an optimal operating point (OOP) tracking algorithm to maximize efficiency across variable load torques. Implemented complex regulation loops for reactive power (VARs) and rotor current injection. The drive designed is sensorless. </p>
+        <p><b>Implementation & Deployment:</b> Constructed high-fidelity plant models in MATLAB/Simulink for stability validation. Translated control laws into LabVIEW/NI FPGA for standalone execution.</p>
+        <div class="image-placeholder project-image project-image-10"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>Field Project: Quadra-Torque Drive System (Minera Peñasquito)</h2>
+        <p><b>Scope:</b>Led the end-to-end commissioning of four dual-synchronous motor ball mill drives, ensuring seamless integration with existing plant infrastructure. </p>
+        <p><b>Leadership & Strategy:</b> Led the installation workflow, supervising technician teams to reduce downtime. Served as the primary technical liaison for troubleshooting during the critical startup phase. </p>
+        <p><b>Knowledge Transfer:</b> Designed and delivered an advanced technical training curriculum for 70 site engineers, covering drive theory, fault analysis, and operational safety.</p>
+        <div class="image-placeholder project-image project-image-11"></div></article>
+      <article class="project-card">
+        <p class="project-type">AMI Automation</p>
+        <h2>R&D Project: Power Quality & Energy Storage (Resonac Graphite)</h2>
+        <p><b>Scope:</b> Analyzed grid disturbances during silicon crystal growth and engineered a supercapacitor-based solution to protect critical loads. </p>
+        <p><b>Theoretical Framework:</b> Modeled the full rectifier-inverter topology and grid interaction dynamics. Calculated optimal supercapacitor sizing and designed a soft-precharge control logic to limit inrush currents. </p>
+        <p><b>Implementation & Deployment:</b> Constructed high-fidelity plant models in MATLAB/Simulink for stability validation. Translated control laws into LabVIEW/NI FPGA for standalone execution.</p>
+        <div class="image-placeholder project-image project-image-12"></div></article>
+      <article class="project-card">
+        <p class="project-type">Tecnológico de Monterrey</p>
+        <h2>Graduate Teaching Assistant & Laboratory Instructor</h2>
+        <p><b>Power Electronics Laboratory:</b> Instructed laboratory sessions on DC-DC and DC-AC converters, supervising students in circuit analysis, hardware debugging, and safety protocols.</p>
+        <p><b>Program Coordination (Dr. Esmeralda Uribe Lam):</b> Collaborated with the program director to redesign engineering curricula presented to the board. Evaluated performance in advanced aeronautical and materials engineering coursework.</p>
+        <div class="image-placeholder project-image project-image-13"></div></article>
+      <article class="project-card">
+        <p class="project-type">Tecnológico de Monterrey</p>
+        <h2>Research assistant</h2>
+        <p><b>Embedded Control:</b> Designed a closed-loop AC motor speed control system using a Microchip dsPIC and C language, integrating a three-phase inverter with encoder feedback. </p>
+        <p>Deployed the prototype as an active educational module and presented the technical design at "Expo-Ingenierías" (University Science Showcase).</p>
+        <div class="image-placeholder project-image project-image-14"></div></article>
+        
+        <article class="project-card">
+        <p class="project-type">Tecnológico de Monterrey/Lean Methods Group</p>
+        <h2>Lean Six Sigma advisor</h2>
+        <p><b>Process Optimization:</b> Co-led manufacturing projects (Ceramic/Tantalum capacitors) achieving $660k USD/year in savings using Minitab for statistical analysis (ANOVA, DOE, Gage R&R). Certifications: Earned Lean Six Sigma Black Belt and Design for Six Sigma (DFSS) Green Belt</p>
+        <div class="image-placeholder project-image project-image-15"></div></article>
     </div>
   </main>
   <footer class="site-footer section-wrap"><div><h2>Interested to collaborate?</h2><p>Let's connect!</p></div><div class="contact-links"><a href="mailto:franco.huidobro@gmail.com">franco.huidobro@gmail.com</a><a href="#">linkedin.com/in/franco</a><a href="tel:+522220000000">+52 222 000 0000</a></div><p class="copyright">© 2026 Franco Huidobro — All rights reserved.</p></footer>
