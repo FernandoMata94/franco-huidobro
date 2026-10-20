@@ -257,6 +257,9 @@ b{
   .skills-panel { padding: 18px; }
   .skills-image { min-height: 190px; }
   .button { min-width: 110px; }
+  .button-row {
+    flex-direction: column;
+}
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
