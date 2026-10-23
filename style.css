@@ -211,7 +211,7 @@ b{
 .site-footer h2 { font-size: 23px; margin-bottom: 5px; }
 .site-footer p { color: #51658C; font-size: 16px;  }
 .contact-links { display: flex; flex-direction: column; text-align: right; font-size: 16px; color: #51658C; }
-.copyright { grid-column: 1 / -1; border-top: 1px solid var(--line); text-align: center; padding-top: 14px; margin: 0;}
+.copyright { grid-column: 1 / -1; border-top: 1px solid var(--line); text-align: center; padding-top: 14px; margin: 0; opacity:1!important;transform: translate(0px)!important; }
 .projects-page { padding-top: 64px; padding-bottom: 80px; }
 .projects-page .section-heading { align-items: end; margin-bottom: 36px; }
 .projects-page h1 { font-size: 42px; margin-bottom: 16px; }
