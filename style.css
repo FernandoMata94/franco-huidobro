@@ -67,7 +67,7 @@ b{
 }
 
 .hero-copy p:not(.eyebrow) { color: #51658C; max-width: 460px; }
-.accent-line { width: 40px; height: 3px; background: var(--blue); }
+.accent-line { width: 40px; height: 5px; background: var(--blue); }
 .hero-visual { display: flex; justify-content: center; }
 .portrait-placeholder 
 { width: min(490px, 30vw); 
